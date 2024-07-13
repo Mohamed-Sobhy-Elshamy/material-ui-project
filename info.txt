@@ -1,0 +1,96 @@
+Material UI
+
+download material UI
+npm install @mui/material @emotion/react @emotion/styled => the first step
+
+هو بيستخدم  google font => Roboto
+<link
+  rel="stylesheet"
+  href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+/> => ف ملف  index.html 
+
+لو المشروع بيحتوي ع icons => must be download this 
+npm install @mui/icons-material
+
+
+
+Material UI => عبارة عن مجموعة من ال Components => open Documention
+############################
+
+## Typography Component ##   =>>>> download extension =>>> mui snippets عشان تسهل الدنيا
+================
+the browser convert Typography to <p> => عشان يفهمها
+لو عاوزو  h1 -> no <p> =>>>> Component="h1"
+variant =>> بيغير استايل العنصر بتاعتي =>> بس بيفضل زي ما هو
+nowrap => لو نص كبير بيكون ع خط واحد و الزيادة عبارة عن ...
+#########################
+
+## Add custom css ## 
+عايز ادي لل Typography => bg || mt || any thing
+- Plain CSS =>>> هديلو class يعني 
+- sx =>>> <Typography sx={{color: "gray"}}variant="h4">
+##################################3
+
+MUI Button & IconButton
+===================
+Button =>>>>    <Button variant="outlined" startIcon={<DeleteIcon />}>
+                    Delete
+                </Button>
+                لو عاوز احط icon داخل ال لbutton دي الطريقة 
+    هروح ابحث ع icons وبعدين هيروح ع Material Icons => واختار اي icon
+
+IconButton =>>>>  children = مهمة هي اللي هتخليني اظهر ال icon بتاعتي
+children => عبارة عنnode من عندهم = عبارة عن الايكون
+
+<IconButton color="info" size="md">
+    <MenuIcon fontSize='large' />
+</IconButton>
+##########################################
+
+MUI AppBar & Link components 
+=======================
+AppBar =>>> اللي بيقا فوق  && Drawer =>>> اللي بيبقا ف الجنب && Avatar =>>> انك تعمل صورة 
+
+Drawer =>> three types 
+1. Temporary =>> المؤقت = لما ادوس عليه بيظهر
+2. Swipeable edge =>> اللي هو بصباعك ف شاشة الفون ترفعو الى فوق
+3. Responsive drawer 
+
+هنستخدم => Permanent drawer => الثابت مش هيتغير = وهعدل ع الاكواد بتاعته
+#######################
+
+TextField Component =>> حقل ادخال عشان تدخل البيانات بتاعتك
+
+####################
+لو عاوز اضيف new color 
+
+Customization =>> Palette =>> Add new colors => هنعمل color => neutral محايد
+هنضيف اللون ده داخل ال createTheme => Palette بتاعتك
+
+###############3
+هنستخدم localStorafe =>> عشان نخزن ال Current Mode
+
+##########################
+Breackpoints => as a media queries in CSS
+لو الشاشة اقل من  600 px => the drawer is hidden
+Breackpoints =>>> Customization
+
+
+###########################
+json server ***
+====================
+json-server --watch data/db.json --port 3001 =>> explain this code
+=======
+json-server => name of this package 
+--watch => بيعمل مراقبة للملف عشان لما يحصل في اب تغيرات تظهر ف الموقع بتاعي
+data/db.json => name of the folder
+--port 3001 => عشان المشروع بتاعي ع 3000
+هنكتب الامر ده ف ال =>>> CMD = 
+
+
+
+
+
+
+
+
